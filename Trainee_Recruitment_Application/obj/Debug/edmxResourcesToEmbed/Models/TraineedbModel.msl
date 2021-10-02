@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TraineedbmvcModelStoreContainer" CdmEntityContainer="TraineeDbContext">
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="TraineedbmvcModel.Batch">
+        <MappingFragment StoreEntitySet="Batches">
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="BatchName" ColumnName="BatchName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainees">
+      <EntityTypeMapping TypeName="TraineedbmvcModel.Trainee">
+        <MappingFragment StoreEntitySet="Trainees">
+          <ScalarProperty Name="TraineeId" ColumnName="TraineeId" />
+          <ScalarProperty Name="TraineeName" ColumnName="TraineeName" />
+          <ScalarProperty Name="Round" ColumnName="Round" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

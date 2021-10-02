@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Trainee Registration Application using Asp.Net MVC </title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    @RenderSection("styles", false)
+</head>
+<body>
+
+    <div class="navbar navbar-light bg-success navbar-expand-md fixed-top shadow-sm">
+        <div class="container">
+
+            @Html.ActionLink("CRUD Operation", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-white" })
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                    <li class="nav-item">@Html.ActionLink("Batches", "Index", "Batches", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                    <li class="nav-item">@Html.ActionLink("Trainees", "Index", "Trainees", new { area = "" }, new { @class = "nav-link text-white" })</li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li class="nav-item">@Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-link text-white btn btn-sm" })</li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">@Html.ActionLink("Register", "Register", "Account", new { area = "" }, new { @class = "nav-link text-white btn btn-sm" })</li>
+                        <li class="nav-item">@Html.ActionLink("Login", "Login", "Account", new { area = "" }, new { @class = "nav-link text-white btn btn-sm" })</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main">
+        @RenderBody()
+    </div>
+
+    <hr />
+    <footer class="container my-3">
+        <p class="text-center text-white bg-success">
+            This Project is running on IIS Express <br />
+            Project made by Visual Studio Enterprise 2019 version 16.11.2 <br /> <strong>&copy; @DateTime.Now.Year - Imtiaz Faisal. All Rights Reserved.</strong>
+        </p>
+    </footer>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

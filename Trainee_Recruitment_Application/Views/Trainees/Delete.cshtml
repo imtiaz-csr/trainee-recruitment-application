@@ -1,0 +1,66 @@
+﻿@model Trainee_Recruitment_Application.Models.Trainee
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "Delete";
+}
+
+<div class="row my-3">
+    <div class="col-2">
+        <a title="Back to List" href="@Url.Action("Index","Trainees")" class="btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-10 offset-2">
+        <h4>Delete Trainee From Here</h4>
+    </div>
+</div>
+@using (Html.BeginForm("Delete", "Trainees", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(x => x.TraineeId)
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.TraineeName, new { @class = "col-form-label col-2 text-end" })
+        <div class="col-4">
+            @Html.TextBoxFor(x => x.TraineeName, new { @class = "form-control" })
+        </div>
+
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Round, new { @class = "col-form-label col-2 text-end" })
+        <div class="col-4">
+            @Html.TextBoxFor(x => x.Round, "{0:.00}", new { @class = "form-control" })
+        </div>
+
+    </div>
+    <div class="row mb-2">
+        @Html.LabelFor(x => x.Picture, new { @class = "col-form-label col-2 text-end" })
+        <div class="col-4">
+            <img src="~/Uploads/@Html.DisplayFor(x=>x.Picture)" alt="Photo of Trainee" width="70" height="70" />
+        </div>
+
+    </div>
+    <div class="row mb-1">
+        @Html.LabelFor(x => x.BatchId, new { @class = "col-form-label col-2 text-end" })
+        <div class="col-4">
+            @Html.TextBoxFor(x => x.BatchId, new { @class = "form-control" })
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-10 offset-2">
+            <button type="submit" class="btn btn-warning btn-sm">Delete</button>
+        </div>
+    </div>
+}
+
+
+
+
+
