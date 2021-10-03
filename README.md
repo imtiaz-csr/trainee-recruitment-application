@@ -12,3 +12,15 @@ A batch can have multiple trainees with one to many relationship. Each trainee c
   <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
   <li><a href="https://jquery.com/">jQuery</a></li>
 </ul>
+<hr />
+
+<strong>Command to run this application:</strong> <br />
+
+1. Open cmd in project folder. 
+2. Write these command - <br />
+    <ul>
+      <li>dotnet build</li>
+      <li>dotnet run</li>
+    </ul>
+3. Open browser and type http://localhost:5000/ in address bar. 
+4. Press Enter button in the keyboard.
