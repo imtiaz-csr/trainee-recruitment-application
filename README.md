@@ -14,7 +14,6 @@ A batch can have multiple trainees with one to many relationship. Each trainee c
 </ul>
 <hr />
 
-<hr />
 <strong>To run this program:</strong>
 <br />
 1.	Open the .sln file in Visual Studio (preferably 2019) in a windows operating system.
