@@ -47,5 +47,6 @@ A batch can have multiple trainees with one to many relationship. Each trainee c
 
 <strong>To run this program:</strong>
 <br />
-1.	Open the .sln file in Visual Studio (preferably 2019) in a windows operating system.
-2.	Press Ctrl+F5 in your keyboard.
+1.  Clone this repository in your machine by executing this command: git clone https://github.com/imtiaz-csr/trainee-recruitment-application.git
+2.	Open the .sln file in Visual Studio (preferably 2019) in a windows operating system.
+3.	Press Ctrl+F5 in your keyboard.
