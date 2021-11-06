@@ -1,5 +1,36 @@
 A batch can have multiple trainees with one to many relationship. Each trainee can be recruited/created/inserted/added, viewed, updated/edited and deleted/terminated to/from a batch by performing CRUD (Create, Read, Update, Delete) operation. 
 <hr />
+
+<strong>homepage:</strong>
+<br />
+![homepage](https://user-images.githubusercontent.com/58094678/140606320-a594b34b-052a-4e4d-8cd0-642433e4d0eb.jpg)
+<br />
+
+<strong>login:</strong>
+<br />
+![login](https://user-images.githubusercontent.com/58094678/140606324-4189909b-dd69-4c08-814d-8d6613bb6a17.jpg)
+<br />
+
+<strong>batch:</strong>
+<br />
+![batch](https://user-images.githubusercontent.com/58094678/140606325-9f84ea5e-79e9-43ca-abd8-096bad7334a5.jpg)
+<br />
+
+<strong>create-batch:</strong>
+<br />
+![create-batch](https://user-images.githubusercontent.com/58094678/140606328-4c562c0d-936c-4f5e-aed8-684c6db92634.jpg)
+<br />
+
+<strong>trainee:</strong>
+<br />
+![trainee](https://user-images.githubusercontent.com/58094678/140606333-878fe3bc-d711-4fb7-ba2a-52334cddafd6.jpg)
+<br />
+
+<strong>delete-trainee</strong>
+<br />
+![delete-trainee](https://user-images.githubusercontent.com/58094678/140606335-6a294657-8565-42c8-bd46-c7413c382004.jpg)
+<br />
+
 <strong>Tools and Technologies:</strong> <br />
 
 <ul>
